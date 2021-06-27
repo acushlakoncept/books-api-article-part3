@@ -1,6 +1,7 @@
 module Api
   module V1
     class BooksController < ApplicationController
+      before_action :authenticate_request!
       before_action :set_book, only: %i[update show destroy]
 
       # GET /books
@@ -11,7 +12,7 @@ module Api
 
       # POST /book
       def create
-        @book = Book.create(book_params)
+        @book = current_user!.books.create(book_params)
 
         if @book.save
           render json: BookRepresenter.new(@book).as_json, status: :created
@@ -24,7 +25,6 @@ module Api
       def show
         render json: BookRepresenter.new(@book).as_json
       end
-
 
       # PUT /books/:id
       def update
