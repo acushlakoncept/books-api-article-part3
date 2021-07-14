@@ -1,6 +1,6 @@
 # How to Build a RESTful API Authentication With JWT (TDD Approach)
 
-In this part of the project weewe'll focus on the login, register endpoints, and securing our book's endpoint using JWT.
+In this part of the project we we'll focus on the login, register endpoints, and securing our book's endpoint using JWT.
 
 ## Article
 [How to Build a RESTful API Authentication With JWT (TDD Approach)](https://www.microverse.org/blog/build-a-restful-api-authentication-with-jwt)
