@@ -42,8 +42,8 @@ Postgres: >=9.5
 ### Setup
 
 ~~~bash
-$ git clone https://github.com/acushlakoncept/books-api-article-part2.git
-$ cd books-api-article-part2
+$ git clone https://github.com/acushlakoncept/books-api-article-part3.git
+$ cd books-api-article-part3
 ~~~
 
 Install gems with:
